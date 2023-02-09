@@ -15,6 +15,11 @@
 		1778409F299047480021BA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1778409E299047480021BA9D /* ContentView.swift */; };
 		177840A1299047490021BA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177840A0299047490021BA9D /* Assets.xcassets */; };
 		177840A4299047490021BA9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177840A3299047490021BA9D /* Preview Assets.xcassets */; };
+		178123202992208C00019B43 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781231F2992208C00019B43 /* PostArrayObject.swift */; };
+		178123222992260000019B43 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178123212992260000019B43 /* CommentView.swift */; };
+		1781232429922E0000019B43 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781232329922E0000019B43 /* MessageView.swift */; };
+		1781232629922F3800019B43 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781232529922F3800019B43 /* CommentModel.swift */; };
+		17C9FF5C2990DC6F0002D06C /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9FF5B2990DC6F0002D06C /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		1778409E299047480021BA9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		177840A0299047490021BA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177840A3299047490021BA9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1781231F2992208C00019B43 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
+		178123212992260000019B43 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		1781232329922E0000019B43 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		1781232529922F3800019B43 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		17C9FF5B2990DC6F0002D06C /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 				1778409C299047480021BA9D /* DogGramApp.swift */,
 				1778409E299047480021BA9D /* ContentView.swift */,
 				175A10902990CB7900E46444 /* FeedView.swift */,
+				178123212992260000019B43 /* CommentView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -63,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				175A10922990CC6D00E46444 /* PostView.swift */,
+				1781232329922E0000019B43 /* MessageView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 		1778409B299047480021BA9D /* DogGram */ = {
 			isa = PBXGroup;
 			children = (
+				17C9FF5A2990DC5C0002D06C /* Model */,
 				175A108C2990C9C200E46444 /* Helpers */,
 				175A10892990C5C800E46444 /* Views */,
 				177840A0299047490021BA9D /* Assets.xcassets */,
@@ -109,6 +122,16 @@
 				177840A3299047490021BA9D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17C9FF5A2990DC5C0002D06C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17C9FF5B2990DC6F0002D06C /* PostModel.swift */,
+				1781231F2992208C00019B43 /* PostArrayObject.swift */,
+				1781232529922F3800019B43 /* CommentModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				175A10912990CB7900E46444 /* FeedView.swift in Sources */,
+				17C9FF5C2990DC6F0002D06C /* PostModel.swift in Sources */,
+				178123222992260000019B43 /* CommentView.swift in Sources */,
+				1781232429922E0000019B43 /* MessageView.swift in Sources */,
 				175A108E2990C9D600E46444 /* Extension.swift in Sources */,
 				1778409F299047480021BA9D /* ContentView.swift in Sources */,
+				178123202992208C00019B43 /* PostArrayObject.swift in Sources */,
+				1781232629922F3800019B43 /* CommentModel.swift in Sources */,
 				175A10932990CC6D00E46444 /* PostView.swift in Sources */,
 				1778409D299047480021BA9D /* DogGramApp.swift in Sources */,
 			);
