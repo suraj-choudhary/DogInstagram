@@ -9,7 +9,6 @@ struct MessageView: View {
     @State var comment: CommentModel
     var body: some View {
         HStack {
-            
             //profile image
             Image("dog1")
                 .resizable()

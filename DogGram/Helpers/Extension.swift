@@ -7,15 +7,11 @@
 
 import Foundation
 import SwiftUI
-
 extension Color {
-    
-    
     struct MyTheme {
         static var ColorPurple: Color {
             return Color("ColorPurple")
         }
-        
         static var yelloColor: Color {
             return Color("ColorYellow")
         }

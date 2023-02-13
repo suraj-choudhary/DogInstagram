@@ -4,13 +4,12 @@
 //
 //  Created by suraj kumar on 06/02/23.
 //
-
 import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                FeedView(posts: PostArrayObject())
+                FeedView(title: "feed", posts: PostArrayObject())
                 
             }
             .tabItem {
@@ -18,13 +17,18 @@ struct ContentView: View {
                 Text("Feed")
             }
             
-            Text("Screen 2")
+            NavigationView {
+                BrowseView()
+
+            }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
                 }
-            
-            Text("screen 3")
+            NavigationView {
+                BrowseView()
+
+            }
                 .tabItem {
                     Image(systemName: "square.and.arrow.up.fill")
                     Text("Browse")
@@ -40,7 +44,6 @@ struct ContentView: View {
         
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

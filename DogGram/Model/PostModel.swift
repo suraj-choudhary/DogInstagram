@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-
 struct PostModel: Identifiable, Hashable {
     var id = UUID()
     var postID: String
@@ -17,21 +16,7 @@ struct PostModel: Identifiable, Hashable {
     var dateCreated: Date
     var likedCount: Int
     var likedByUser: Bool
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
-    
-    //postID
-    //userid
-    //user name
-    //caption
-    //date
-    //like count
-    //liked by current user
-    
-    
-    
-    
-    
 }
