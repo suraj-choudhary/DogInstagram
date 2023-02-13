@@ -26,7 +26,7 @@ struct ContentView: View {
                     Text("Search")
                 }
             NavigationView {
-                BrowseView()
+                UploadView()
 
             }
                 .tabItem {
